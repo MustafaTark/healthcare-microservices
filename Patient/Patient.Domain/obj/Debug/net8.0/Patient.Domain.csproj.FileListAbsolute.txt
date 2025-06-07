@@ -1,0 +1,11 @@
+F:\Asp.NET Core\Healthcare\healthcare-microservices\Patient\Patient.Domain\bin\Debug\net8.0\Patient.Domain.deps.json
+F:\Asp.NET Core\Healthcare\healthcare-microservices\Patient\Patient.Domain\bin\Debug\net8.0\Patient.Domain.dll
+F:\Asp.NET Core\Healthcare\healthcare-microservices\Patient\Patient.Domain\bin\Debug\net8.0\Patient.Domain.pdb
+F:\Asp.NET Core\Healthcare\healthcare-microservices\Patient\Patient.Domain\obj\Debug\net8.0\Patient.Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Asp.NET Core\Healthcare\healthcare-microservices\Patient\Patient.Domain\obj\Debug\net8.0\Patient.Domain.AssemblyInfoInputs.cache
+F:\Asp.NET Core\Healthcare\healthcare-microservices\Patient\Patient.Domain\obj\Debug\net8.0\Patient.Domain.AssemblyInfo.cs
+F:\Asp.NET Core\Healthcare\healthcare-microservices\Patient\Patient.Domain\obj\Debug\net8.0\Patient.Domain.csproj.CoreCompileInputs.cache
+F:\Asp.NET Core\Healthcare\healthcare-microservices\Patient\Patient.Domain\obj\Debug\net8.0\Patient.Domain.dll
+F:\Asp.NET Core\Healthcare\healthcare-microservices\Patient\Patient.Domain\obj\Debug\net8.0\refint\Patient.Domain.dll
+F:\Asp.NET Core\Healthcare\healthcare-microservices\Patient\Patient.Domain\obj\Debug\net8.0\Patient.Domain.pdb
+F:\Asp.NET Core\Healthcare\healthcare-microservices\Patient\Patient.Domain\obj\Debug\net8.0\ref\Patient.Domain.dll

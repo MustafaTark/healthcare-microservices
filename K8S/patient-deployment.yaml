@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: patient
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: patient
+  template:
+    metadata:
+      labels:
+        app: patient
+    spec:
+      containers:
+      - name: patient
+        image: mostafa321/patient:dev  # Replace with your actual image
+        ports:
+        - containerPort: 8080
+        env:
+        - name: ConnectionStrings__DefaultConnection
+          valueFrom:
+            configMapKeyRef:
+              name: patient-config
+              key: ConnectionStrings__DefaultConnection
+        - name: DOTNET_SYSTEM_GLOBALIZATION_INVARIANT
+          value: "false"
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: patient-config
+data:
+  ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=PatientDb;User Id=sa;Password=P@ssw0rd;TrustServerCertificate=True"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: patient
+  labels:
+    app: patient
+spec:
+  type: NodePort
+  selector:
+    app: patient
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 8080
+      nodePort: 32503  # Ensure this port is available in your cluster
